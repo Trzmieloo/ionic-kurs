@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css">
+        <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+    </head>
+
+    <body>
+        <ion-app>
+            <ion-header>
+                <ion-toolbar color="primary">
+                    <ion-title>Planowanie budżetu</ion-title>
+                </ion-toolbar>
+            </ion-header>
+
+            <ion-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-md="6" offset-md="3">
+                                <ion-card>
+                                        <ion-card-header>
+                                            <ion-card-title>Nowy wydatek</ion-card-title>
+                                        </ion-card-header>
+                    
+                                        <ion-card-content>
+                                            <ion-item>
+                                                <ion-label position="floating">Nazwa wydatku</ion-label>
+                                                <ion-input type="text"></ion-input>
+                                            </ion-item>
+                    
+                                            <ion-item>
+                                                <ion-label position="floating">Kwota wydatku</ion-label>
+                                                <ion-input type="number"></ion-input>
+                                            </ion-item>
+
+                                            <ion-button>
+                                            <ion-icon slot="start" name="add-circle-outline"></ion-icon>
+                                                Dodaj
+                                            </ion-button>
+
+                                            <ion-button fill="outline" color="danger">
+                                            <ion-icon slot="start" name="trash"></ion-icon>
+                                                Wyczyść
+                                            </ion-button>
+
+                                        </ion-card-content>
+                                    </ion-card>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-content>
+        </ion-app>
+    </body>
+</html>
